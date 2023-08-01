@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import './globals.css'
 import { Inter } from 'next/font/google'
 
@@ -12,8 +13,15 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-      <header className='py-5 px-4 bg-slate-800'>
-        <h1 className='text-2xl text-purple-500 capitalize cursor-pointer'>strapi demo</h1>
+      <header className='py-5 px-4 bg-slate-800 flex justify-between'>
+        <h1 className='text-2xl text-purple-500 capitalize cursor-pointer'><Link href="/" title='Cms Demo'>cms demo</Link></h1>
+      <nav>
+      <ul className='flex gap-x-4'>
+            <li><Link href="strapi" title='Strapi' className='capitalize underline lg:hover:text-purple-500 text-white lg:hover:no-underline'>strapi</Link></li>
+            <li><Link href="directus" title='Directus' className='capitalize underline lg:hover:text-purple-500 text-white lg:hover:no-underline'>Directus</Link></li>
+          </ul>
+
+      </nav>
       </header>
         {children}
       <footer className='fixed bottom-0 w-full'>

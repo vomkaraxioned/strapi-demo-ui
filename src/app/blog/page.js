@@ -29,6 +29,7 @@ const Blog = async(req,res)=> {
     const data =cms === "directus" ?  await response.json() : await graphQLClient.request(query);
     const result =cms === "directus" ?  data.data?.filter(obj=>obj.status === "published") : data.articles.data;
     const description =  cms === "directus" ? getString(result[id].description): result[id]?.attributes.Description;
+    console.log(description)
     return (
         <div className="w-4/5 mx-auto">
          {  

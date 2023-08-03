@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-      <header className='py-5 px-4 bg-slate-800 flex justify-between'>
+      <header className='py-5 px-4 bg-slate-800 flex justify-between sticky z-10 top-0 w-full'>
         <h1 className='text-2xl text-purple-500 capitalize cursor-pointer'><Link href="/" title='Cms Demo'>cms demo</Link></h1>
       <nav>
       <ul className='flex gap-x-4'>
@@ -24,8 +24,8 @@ export default function RootLayout({ children }) {
       </nav>
       </header>
         {children}
-      <footer className='fixed bottom-0 w-full'>
-        <p className='text-base text-center'>copyright&copy;2023 all rights reserved</p>
+      <footer className='fixed bottom-0 w-full bg-slate-800'>
+        <p className='text-base text-center text-purple-500'>copyright&copy;2023 all rights reserved</p>
       </footer>
         </body>
     </html>

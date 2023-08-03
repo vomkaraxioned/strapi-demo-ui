@@ -1,0 +1,28 @@
+[
+	{
+		"id": 1,
+		"status": "published",
+		"sort": null,
+		"user_created": "1bbda674-21fa-45c8-8bd3-6859dce57cba",
+		"date_created": "2023-07-31T06:16:34.673Z",
+		"user_updated": "6eb6bedc-267a-4624-8bc8-dddc96fc6615",
+		"date_updated": "2023-08-01T13:17:45.724Z",
+		"title": "FAQs about Probably Genetic’s no-cost genetic testing program for pediatric epilepsy",
+		"banner": "7512e522-ad0d-4264-92c1-5712a1223d2a",
+		"author": 1,
+		"description": "Probably Genetic is a group of patients, geneticists, and engineers that seek to make genetic testing more accessible to rare disease patients. Their team partners with patient advocacy groups, such as Chelsea’s Hope, and biotech companies to launch no-cost genetic testing programs to end the diagnostic odyssey.Probably Genetic allows caregivers of pediatric epilepsy patients to access a genetic testing option from the comfort of their homes. Their process eliminates the need to find the right specialist and is free of charge to the patient. Also, their approach empowers the individual and provides an easy way to get the answers you’ve been looking for."
+	},
+	{
+		"id": 2,
+		"status": "draft",
+		"sort": null,
+		"user_created": "1bbda674-21fa-45c8-8bd3-6859dce57cba",
+		"date_created": "2023-08-01T11:34:54.944Z",
+		"user_updated": null,
+		"date_updated": null,
+		"title": "Test title",
+		"banner": null,
+		"author": 2,
+		"description": null
+	}
+]

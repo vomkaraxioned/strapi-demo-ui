@@ -45,7 +45,7 @@ const Blog = async (req, res) => {
   const description =
     cms === "directus"
       ? getString(result[id].description)
-      : result[id]?.attributes.Description;
+      : result[id-1]?.attributes.Description;
   return (
     <div className="w-4/5 mx-auto">
       {
@@ -53,7 +53,7 @@ const Blog = async (req, res) => {
           <h2 className="text-center text-2xl py-2 font-bold">
             {cms === "directus"
               ? result[id]?.title
-              : result[id]?.attributes.Title}
+              : result[id-1]?.attributes.Title}
           </h2>
           <div dangerouslySetInnerHTML={{ __html: description }} />
         </section>

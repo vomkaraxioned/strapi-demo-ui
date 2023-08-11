@@ -24,7 +24,6 @@ export const Articles = ({ articlesData, cmsName, preview = false }) => {
             key={i}
           >
             <Link
-              className="relative"
               href={`/blog?cms=${cmsName}&id=${ cmsName === "directus" ?i:i+1}${
                 preview
                   ? `&preview=true&secret=${process.env.STRAPI_PREVIEW_SECRET}`
@@ -35,7 +34,8 @@ export const Articles = ({ articlesData, cmsName, preview = false }) => {
               <Image
                 src={url}
                 alt={title}
-                fill
+                width={500}
+                height={500}
                 className="w-full h-auto object-cover object-center"
               />
               <figcaption className="absolute top-0 w-full px-1 text-white bg-slate-600 bg-opacity-60 py-2">

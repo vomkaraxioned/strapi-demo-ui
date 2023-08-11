@@ -24,6 +24,7 @@ export const Articles = ({ articlesData, cmsName, preview = false }) => {
             key={i}
           >
             <Link
+              className="relative"
               href={`/blog?cms=${cmsName}&id=${ cmsName === "directus" ?i:i+1}${
                 preview
                   ? `&preview=true&secret=${process.env.STRAPI_PREVIEW_SECRET}`

@@ -34,8 +34,7 @@ export const Articles = ({ articlesData, cmsName, preview = false }) => {
               <Image
                 src={url}
                 alt={title}
-                width={1000}
-                height={1000}
+                fill
                 className="w-full h-auto object-cover object-center"
               />
               <figcaption className="absolute top-0 w-full px-1 text-white bg-slate-600 bg-opacity-60 py-2">
